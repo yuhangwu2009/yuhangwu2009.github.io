@@ -4,52 +4,6 @@
   <title>The Monk Diamond Discovery</title>
 </head>
 <body>
-  <p><h1>Yuhang's first coding project "awesome!"</h1></p>
+  <p><h1>Yuhang's first coding project "Awesome!"</h1></p>
 </body>
-</img src="WJD_5391.JPG"">
-<script>
-var marker = new THREE.Object3D();
-  scene.add(marker);
-  
-  var cover = new THREE.MeshNormalMaterial();
-  var body = new THREE.SphereGeometry(100);
-  var avatar = new THREE.Mesh(body, cover);
-  marker.add(avatar);
-  
-  var hand = new THREE.SphereGeometry(50);
-  
-  var right_hand = new THREE.Mesh(hand, cover);
-  right_hand.position.set(-150, 0, 0);
-  avatar.add(right_hand);
-  
-  var left_hand = new THREE.Mesh(hand, cover);
-  left_hand.position.set(150, 0, 0);
-  avatar.add(left_hand);
-  
-  var foot = new THREE.SphereGeometry(50);
-  
-  var right_foot = new THREE.Mesh(foot, cover);
-  right_foot.position.set(-75, -125, 0);
-  avatar.add(right_foot);
-  
-  var left_foot = new THREE.Mesh(foot, cover);
-  left_foot.position.set(75, -125, 0);
-  avatar.add(left_foot);
-  
-  marker.add(camera);
-  
-  // Trees
-  makeTreeAt( 500,  0);
-  makeTreeAt(-500,  0);
-  makeTreeAt( 750, -1000);
-  makeTreeAt(-750, -1000);
-  function makeTreeAt(x, z) {
-    var trunk = new THREE.Mesh(
-      new THREE.CylinderGeometry(50, 50, 200),
-      new THREE.MeshBasicMaterial({color: 0xA0522D})
-      
-    );
-    
-    var top = new THREE.Mesh(
-      new THREE.Sph</script>
 </html>
