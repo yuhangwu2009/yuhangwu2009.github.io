@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mixing Milk</title>
+    <link href="code.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Mixing Milk</h1>
+    <p>This problem is about a farmer who wants to mix his milk. They will give us 6 numbers. The first one is the amount of milk the first bucket can hold, and the second one is the amount of milk there is. The third one is the amount of milk the second bucket can hold, etc. So, this is the input code:</p>
+    <div id="code">
+      <pre>
+        max_cap = []
+        curr_cap = []
+
+        for i in range(3):
+            x = int(input("How much milk can the buckets hold: "))
+            max_cap.append(x)
+
+        for i in range(3):
+            x = int(input("How much milk are in the buckets: "))
+            curr_cap.append(x)
+      </pre>
+    </div>
+    <p>Now, we add the first bucket's amount to the second bucket's amount. If the second bucket's amount is greater than the second bucket's capacity, the amount left in the first bucket will be the amount in the second bucket minus the capacity of the second bucket. Then, we will make the second bucket's amount equal to the second bucket's capacity. We will repeat this step 100 times.</p>
+    <div id="code">
+      <pre>
+        for i in range(100):
+            pout = i % 3
+            pin = (pout + 1) % 3
+            z = curr_cap[pout] + curr_cap[pin]
+            if z > max_cap[pin]:
+                curr_cap[pout] = z - max_cap[pin]
+                curr_cap[pin] = max_cap[pin]
+            else:
+                curr_cap[pin] += curr_cap[pout]
+                curr_cap[pout] = 0
+      </pre>
+    </div>
+    <p>The final code:</p>
+    <div id="code">
+      <pre>
+        max_cap = []
+        curr_cap = []
+
+        for i in range(3):
+            x = int(input("How much milk can the buckets hold: "))
+            max_cap.append(x)
+
+        for i in range(3):
+            x = int(input("How much milk are in the buckets: "))
+            curr_cap.append(x)
+
+        for i in range(100):
+            pout = i % 3
+            pin = (pout + 1) % 3
+            z = curr_cap[pout] + curr_cap[pin]
+            if z > max_cap[pin]:
+                curr_cap[pout] = z - max_cap[pin]
+                curr_cap[pin] = max_cap[pin]
+            else:
+                curr_cap[pin] += curr_cap[pout]
+                curr_cap[pout] = 0
+
+        print(curr_cap[0])
+        print(curr_cap[1])
+        print(curr_cap[2])
+      </pre>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
