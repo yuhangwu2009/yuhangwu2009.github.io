@@ -213,6 +213,7 @@ a {
     margin-left: 5px;
     font-size: 15px;
     color: #00ffff;
+    display: inline-block;
 }
 
 .message-text {
@@ -306,4 +307,9 @@ input:focus {
 .profile-button:hover {
     background-color:#949494;
     transition: 0.2s;
+}
+
+.profile-img {
+    max-width: 3%;
+    height: 3%;
 }
