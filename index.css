@@ -1,18 +1,2 @@
-* {
-    background-color: black;
-    background-image: url("images/myBackground.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-h1 {
-    text-align: center;
-}
-
-#pebble {
-    border: 4px;
-    border-color: white;
-}
+/*THIS IS OBFUSCATED SO DONT EVEN THINK ABOUT IT*/
+#pebble-img{border-left-width:.041666667in;}h1{text-align:center;}#pebble-img{border-bottom-width:.041666667in;}#pebble-img{border-right-width:.041666667in;}#pebble-img{border-top-width:.041666667in;}#pebble-img{border-left-style:none;}#pebble-img{border-bottom-style:none;}#pebble-img{border-right-style:none;}#pebble-img{border-top-style:none;}#pebble-img{border-left-color:white;}*{background-color:black;}*{background-image:url("images/myBackground.png");}#pebble-img{border-bottom-color:white;}*{background-attachment:fixed;}#pebble-img{border-right-color:white;}*{background-position:center;}#pebble-img{border-top-color:white;}*{background-repeat:no-repeat;}*{background-size:cover;}#pebble-img{border-image:none;}*{color:white;}#pebble-img{max-width:10%;}#specialPebble,#pebble-img{position:absolute;}#pebble-img{top:10%;}#pebble-img{left:15%;}#specialPebble{top:284.25pt;}#specialPebble{left:766px;}
