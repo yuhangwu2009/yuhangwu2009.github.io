@@ -313,3 +313,33 @@ input:focus {
     max-width: 3%;
     height: 3%;
 }
+
+.sidebar-button {
+    max-width: 70px;
+    background-color: #5864f1;
+    text-align: center;
+    border-radius: 10px;
+    display: inline;
+    margin-bottom: 5px;
+}
+
+.sidebar-logo {
+    max-width: 60px;
+    align-self: center;
+    left: 10%;
+}
+
+.game-area {
+    width: 35%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    height: 100%;
+    background-color: #35393f;
+    float: right;
+    display: none;
+}
+
+.messagechannelimg {
+    max-height: 100%;
+    text-align: center;
+}
