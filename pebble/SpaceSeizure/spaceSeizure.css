@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    color: white;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -60,6 +63,7 @@ img {
     border-radius: 10px;
     text-align: center;
     vertical-align: middle;
+    display: none;
 }
 
 .beforePlayImg {
@@ -71,4 +75,126 @@ img {
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+.login-block {
+    height: 96%;
+    width: 94%;
+    margin: auto;
+    float: right;
+    background-color: #555353;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url("../../images/galaxy.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.register-block {
+    height: 96%;
+    width: 94%;
+    margin: auto;
+    float: right;
+    background-color: #555353;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+}
+
+.confirm-email-block {
+    height: 96%;
+    width: 94%;
+    margin: auto;
+    float: right;
+    background-color: #555353;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+}
+
+.login-textbox {
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    width: 50%;
+    color: white;
+    background-color: #949494;
+    height: 3%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-button {
+    margin-bottom: 5px;
+    
+}
+
+.prologue-box {
+    text-align: center;
+    margin: 10%;
+    margin-top: 2%;
+    max-height: 90%;
+    border: 10px;
+    border-color: red;
+    border-style: double;
+}
+
+.prologue-text {
+    overflow: auto;
+    overflow-y: hidden;
+    color: yellow;
+    margin: auto;
+    line-height: 500%;
+    margin: 2%;
+    
+    /* animation properties */
+    transform: translateY(100%);
+    animation: my-animation 30s linear 1s;
+}
+
+
+@keyframes my-animation {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.continue-button {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: -3%;
+    color: black;
+    top: 0%;
+    height: 5%;
+}
+
+.hint {
+    position: absolute;
+    margin-top: 40%;
+    margin: auto;
+    color: black;
+    top: 85%;
+    left: 43%;
+    height: 5%;
+}
+
+.warning-text {
+    color: red;
+    animation-name: blink;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 100;
+}
+
+@keyframes blink{
+    0%{color:red;}
+    50%{color:white;}
+    100%{color:red;}
 }
