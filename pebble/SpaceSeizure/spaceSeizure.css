@@ -179,7 +179,7 @@ img {
     position: absolute;
     margin-top: 40%;
     margin: auto;
-    color: black;
+    color: white;
     top: 85%;
     left: 43%;
     height: 5%;
@@ -197,4 +197,8 @@ img {
     0%{color:red;}
     50%{color:white;}
     100%{color:red;}
+}
+
+::placeholder {
+    color: white;
 }
