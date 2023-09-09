@@ -4,6 +4,8 @@
             Space Seizure
         </title>
         <link rel="stylesheet" href="spaceSeizure.css">
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
         <script src="spaceSeizure.js"></script>
     </head>
     <body>
@@ -14,6 +16,40 @@
         </div>
         <div class="gameTitle">
             Space Seizure
+        </div>
+        <div class="login-block" id="login-block">
+            Username:
+            <br>
+            <input type="text" id="login-username-box" class="login-textbox">
+            <br>
+            Password:
+            <br>
+            <input type="password" id="login-password-box" class="login-textbox">
+        </div>
+        <div class="register-block" id="register-block">
+            <h1>You will not be able to create another account.</h1>
+            <h2>Please note that you will not be able to unlock the full potential of this game until your email is verified.</h2>
+            Username:
+            <br>
+            <input type="text" id="register-username-box" class="login-textbox">
+            <br>
+            Email:
+            <br>
+            <input type="email" id="register-email-box" class="login-textbox">
+            <br>
+            Password:
+            <br>
+            <input type="password" id="register-password-box" class="login-textbox">
+            <br>
+            Re-enter Password:
+            <br>
+            <input type="password" id="register-password2-box" class="login-textbox">
+            <br>
+        </div>
+        <div class="confirm-email-block" id="confirm-email-block">
+            Please enter the verification code sent to your email:
+            <br>
+            <input type="password" id="email-confirm-box" class="login-textbox">
         </div>
         <div class="gameArea" id="gameArea">
             <img src="../../images/spaceseizuremain.png" class="beforePlayImg">
